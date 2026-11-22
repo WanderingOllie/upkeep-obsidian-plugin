@@ -1,0 +1,11 @@
+{
+	"id": "upkeep-plugin",
+	"name": "Upkeep",
+	"version": "1.0.0",
+	"minAppVersion": "1.0.0",
+	"description": "Adds a sidebar menu containing a pomodoro timer and a checklist of daily study tasks.",
+	"author": "WanderingOllie",
+	"authorUrl": "https://github.com/WanderingOllie",
+	"fundingUrl": "",
+	"isDesktopOnly": false
+}
