@@ -17,11 +17,17 @@ the plugin's settings tab.
 ## Installation
 
 ```bash
-git clone https://github.com/WanderingOllie/upkeep-obsidian-plugin /path/to/vault/.obsidian/plugins/upkeep
+git clone <this repo> /path/to/vault/.obsidian/plugins/upkeep
 cd /path/to/vault/.obsidian/plugins/upkeep
 npm install
 npm run build
 ```
+
+Reload Obsidian, then enable **Upkeep** under Settings then Community plugins.
+
+Open the panel from the ribbon icon, or via the command palette with "Open Upkeep panel".
+
+If your vault is itself a git repository, add `.obsidian/plugins/upkeep/` to the vault's `.gitignore` so the two repos don't nest.
 
 ## Layout
 
