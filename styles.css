@@ -1,0 +1,116 @@
+.upkeep-view {
+    max-width: 32rem;
+    padding: var(--size-4-4);
+}
+
+.upkeep-section+.upkeep-section {
+    margin-top: var(--size-4-6);
+    padding-top: var(--size-4-6);
+    border-top: 1px solid var(--background-modifier-border);
+}
+
+.upkeep-heading {
+    margin: 0 0 var(--size-4-3);
+    color: var(--text-muted);
+    font-size: var(--font-ui-small);
+    font-weight: var(--font-semibold);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.upkeep-button-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--size-4-2);
+    margin-bottom: var(--size-4-3);
+}
+
+.upkeep-session-label {
+    margin: 0;
+    color: var(--text-muted);
+    font-size: var(--font-ui-small);
+}
+
+.upkeep-clock {
+    margin: var(--size-4-1) 0;
+    font-family: var(--font-monospace);
+    font-size: 3rem;
+    font-weight: var(--font-semibold);
+    font-variant-numeric: tabular-nums;
+    line-height: 1.1;
+    color: var(--text-normal);
+}
+
+.upkeep-count,
+.upkeep-summary {
+    margin: 0 0 var(--size-4-3);
+    color: var(--text-muted);
+    font-size: var(--font-ui-smaller);
+}
+
+.upkeep-habits {
+    list-style: none;
+    margin: 0 0 var(--size-4-3);
+    padding: 0;
+}
+
+.upkeep-habits li {
+    display: flex;
+    align-items: center;
+    gap: var(--size-4-2);
+    padding: var(--size-4-1) 0;
+}
+
+.upkeep-habits label {
+    flex: 1;
+    cursor: pointer;
+}
+
+.upkeep-habits input:checked+label {
+    color: var(--text-muted);
+    text-decoration: line-through;
+}
+
+.upkeep-streak {
+    color: var(--text-accent);
+    font-size: var(--font-ui-smaller);
+    font-variant-numeric: tabular-nums;
+}
+
+.upkeep-habit-row .setting-item-info {
+    display: none;
+}
+
+.upkeep-habit-row .setting-item-control {
+    flex: 1;
+}
+
+.upkeep-habit-row input[type='text'] {
+    flex: 1;
+}
+
+.upkeep-habit-row {
+    padding: var(--size-4-2) 0;
+}
+
+.upkeep-section.is-running .upkeep-clock {
+    color: var(--text-accent);
+}
+
+.upkeep-section.is-paused .upkeep-clock {
+    opacity: 0.5;
+}
+
+.upkeep-button-row button {
+    transition: transform 60ms ease, background-color 60ms ease;
+}
+
+.upkeep-button-row button:active:not(:disabled) {
+    transform: scale(0.96);
+    background-color: var(--interactive-hover);
+}
+
+.upkeep-button-row button:disabled {
+    opacity: 0.5;
+    cursor: default;
+}
