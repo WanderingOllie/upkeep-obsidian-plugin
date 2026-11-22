@@ -52,7 +52,7 @@ export class HabitTracker extends Component {
         const habits = this.plugin.data.habits.filter((h) => h.text.trim());
 
         if (habits.length === 0) {
-            this.list.createEl('li', { text: 'No habits yet — add some in settings' });
+            this.list.createEl('li', { text: 'No habits yet - add some in settings' });
             return;
         }
 
